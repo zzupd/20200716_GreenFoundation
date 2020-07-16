@@ -1,0 +1,265 @@
+@charset "UTF-8";
+@import url("http://zzupd.dothome.co.kr/200528/cssReset/reset.css");
+
+/* 공통영역 */
+body {
+    background-color: #fff;  /* 배경색 */
+}
+
+
+* {
+    color: #333;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 공통영역 */
+
+/* Guideline */
+/*
+div#wrap {
+    border: 1px solid #000;
+}
+*/
+
+/*
+#header {
+    border: 1px solid #f80;
+}
+*/
+/*
+#header>#headerLogo {
+    border: 1px solid #0f0;
+}
+*/
+/*
+#header>nav#gnb {
+    border: 4px solid #f0f;
+}
+*/
+/* Guideline */
+
+
+/* div#wrap */
+div#wrap {
+    width: 1200px;
+    margin: 10px auto;
+}
+/* div#wrap */
+
+
+/* header#header 시작 */
+header#header {
+    height: 100px;
+    display: flex;
+}
+
+#header>#headerLogo {
+    width: 220px;
+    padding-top: 30px;
+       /* 100 - 40 => 60*/
+    margin-right: 20px;
+}
+
+#header>nav#gnb {
+    width: 960px;
+
+    position: relative;
+}
+
+#header>#gnb>ul#mainMenu {
+    width: 700px;
+    list-style: none;
+/*    border: 4px solid #0ff;*/
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#header>#gnb>ul>li {
+    float: left;
+}
+#header>#gnb>ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#header>#gnb>ul a {
+    color: #333;
+    width: 170px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #000;
+    display: inline-block;
+}
+#header>#gnb>ul>li:not(:first-child)>a {
+    border-left: none;
+}   /* a요소 테두리선 겹침현상(=2중 선) 제거 */
+
+#header>#gnb>ul a:hover {
+    color: #fff;
+    background-color: #3cb149;
+}
+
+#header>#gnb>ul ul {
+    background-color: #3cb149;
+}
+/* header#header 끝 */
+
+
+
+/* nav#extraSubMenu 시작 */
+nav#extraSubMenu {
+    height: 130px;
+/*    border: 4px solid #0ff;    */
+    background-color: #3cb149;
+    position: relative;
+}
+#extraSubMenu>div#subMenuArea {
+    width: 700px;
+    /*border: 2px solid #f00;*/
+
+    position: absolute;
+    right: 0;
+}
+
+nav#extraSubMenu #subMenuArea::after {
+     /* 슬라이드쇼와의 관계를 위해 제거 예정 */
+    content: "";
+    clear: both;
+    display: block;
+}
+nav#extraSubMenu ul.subMenu {
+
+    list-style: none;
+    display: inline-block;
+    float: left;
+
+}
+nav#extraSubMenu ul.subMenu a {
+    color: #fff;
+    width: 170px;
+    font-size: 19px;
+/*    font-weight: bold;*/
+    text-align: center;
+    padding: 8px;
+/*    border: 1px solid #000;*/
+    display: inline-block;
+
+}
+
+nav#extraSubMenu ul.subMenu a:hover {
+    color: #333;
+    background-color: #fff;
+}
+/* nav#extraSubMenu 끝 */
+
+
+
+/* div#slideshow 시작 */
+div#slideshow {
+    height: 300px;
+
+    margin-bottom: 0;
+
+    overflow: hidden;
+
+    position: absolute;
+    top: 130px;
+    z-index: -1;
+}
+/* div#slideshow 끝 */
+
+
+/* main#main 시작 */
+main#main {
+
+    margin-top: 188px;
+    display: flex;
+}
+
+#main>div {
+    height: 200px;
+    /*border: 1px solid #000;*/
+    flex: 1;
+}
+
+#main>.divTab {
+    height: 200px;
+    padding: 10px;
+}
+
+button.tabBtn {
+    font-size: 18px;
+    padding: 4px 14px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+
+    position: relative;
+    left: 40px;
+    top: 1px;
+}
+
+#main .tabContent {
+    height: 140px;
+    border: 1px solid #ccc;
+}
+#main .tabContent table {
+    width: 380px;
+}
+#main .tabContent td {
+    padding: 6px;
+}
+
+#main #galleryContent td {
+    height: 130px;
+}
+#main #banner {
+    text-align: center;
+    padding-top: 50px;
+}
+/* main#main 끝 */
+
+
+/* footer#footer 시작 */
+footer#footer {
+    display: flex;
+}
+#footer>div {
+    height: 100px;
+/*    border: 1px solid #000;*/
+}
+
+#footer div#footerLogo {
+    width: 220px;
+    padding-top: 30px;
+}
+
+#footer div#copyright {
+    width: 800px;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 20px;
+}
+
+#footer div#familySite {
+    width: 180px;
+    text-align: center;
+    line-height: 100px;
+}
+#footer div#familySite select {
+    font-size: 18px;
+    padding: 10px;
+}
+/* footer#footer 끝 */
+
+
+
+
+
+
+
+
